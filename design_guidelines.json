@@ -1,0 +1,130 @@
+{
+  "theme": "Light",
+  "archetype": "Pastel & Soft mixed with Swiss & High-Contrast",
+  "colors": {
+    "primary": "#6B88B3",
+    "secondary": "#DDE6F5",
+    "accent": "#F6D34B",
+    "background_main": "#F9FAFB",
+    "background_dark": "#1A1A24",
+    "text_main": "#1A1A24",
+    "text_muted": "#4B5563",
+    "text_light": "#F8FAFC",
+    "border_dark": "#1A1A24"
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk, sans-serif",
+    "body_font": "Inter, sans-serif",
+    "monospace_font": "Space Mono, monospace",
+    "handwriting_font": "Caveat, cursive",
+    "font_imports": "@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700,400,900&display=swap');"
+  },
+  "visual_elements": {
+    "style": "Clean editorial layout mixed with playful handmade elements. Swiss editorial design, Notion simplicity, Comic-book storytelling, Hand-drawn annotations.",
+    "doodles": "SVG hand-drawn arrows, sticky-note style illustrations, paper-cut doodles, sketch annotations.",
+    "borders": "Solid 2px dark borders (#1A1A24) for cards, buttons, and specific sections to evoke comic-book styling.",
+    "shadows": "Hard offset shadows (e.g., 4px 4px 0px #1A1A24) for a tactile, notebook/paper feel."
+  },
+  "layout_spacing": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "section_padding": "py-20 md:py-32",
+    "grid": "Bento grids for cards, asymmetrical layouts for text, generous whitespace."
+  },
+  "media": {
+    "hero_portrait": "https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxibGFjayUyMGFuZCUyMHdoaXRlJTIwcG9ydHJhaXQlMjBtYW4lMjBsb29raW5nJTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc4MTIwMTI0M3ww&ixlib=rb-4.1.0&q=85",
+    "about_engineer": "https://images.unsplash.com/photo-1758246260025-f665f275279e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxlbmdpbmVlciUyMGhhcmQlMjBoYXQlMjBzaWxob3VldHRlfGVufDB8fHx8MTc4MTIwMTI0M3ww&ixlib=rb-4.1.0&q=85",
+    "journey_superhero": "https://images.unsplash.com/photo-1513384312027-9fa69a360337?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwxfHxzdXBlcmhlcm8lMjB0b3klMjBzdGFuZGluZ3xlbnwwfHx8fDE3ODEyMDEyNTh8MA&ixlib=rb-4.1.0&q=85",
+    "project_1": "https://images.unsplash.com/photo-1759157273068-42e6d441f772?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGJyYW5kaW5nJTIwcGFja2FnaW5nJTIwZGVzaWdufGVufDB8fHx8MTc4MTIwMTI0M3ww&ixlib=rb-4.1.0&q=85",
+    "project_2": "https://images.unsplash.com/photo-1751644332113-2004a1b143f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGJyYW5kaW5nJTIwcGFja2FnaW5nJTIwZGVzaWdufGVufDB8fHx8MTc4MTIwMTI0M3ww&ixlib=rb-4.1.0&q=85",
+    "project_3": "https://images.unsplash.com/photo-1760226642568-6b1e12b6d41c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGJyYW5kaW5nJTIwcGFja2FnaW5nJTIwZGVzaWdufGVufDB8fHx8MTc4MTIwMTI0M3ww&ixlib=rb-4.1.0&q=85",
+    "thank_you_portrait": "https://images.pexels.com/photos/30181294/pexels-photo-30181294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "sections": [
+    {
+      "name": "HERO",
+      "layout": "Full-screen (min-h-screen). Large heading, subhead, B&W portrait with an outlined frame (e.g., comic book style thick border), CTA button. Floating SVG doodles positioned absolute, animating with Framer Motion.",
+      "content": {
+        "headline": "Welcome to the World of Disruption",
+        "subhead": "Human Thinking. AI Speed. Real Results.",
+        "cta": "Let's Disrupt"
+      }
+    },
+    {
+      "name": "ABOUT",
+      "layout": "Two columns on desktop, single on mobile. 'Hello, I'm Shashank Saurav' (handwritten font for name). Origin story narrative with scroll-triggered reveals, hand-drawn arrows pointing to text.",
+      "content": {
+        "title": "Hello, I'm Shashank Saurav",
+        "narrative": "Origin story narrative with scroll-triggered reveals and hand-drawn arrows."
+      }
+    },
+    {
+      "name": "JOURNEY",
+      "layout": "Interactive winding timeline with checkpoints. Winding path SVG or vertical line in the background. Content boxes alternate sides on desktop. Superhero imagery floating.",
+      "content": {
+        "title": "How I moved in life",
+        "checkpoints": [
+          "PESIT Bangalore (2012-2016)",
+          "ISDI Mumbai (2020-2022)",
+          "Open Strategy & Design (2022-2023)",
+          "Gozoop (2023-2024)",
+          "Lopez Design (2024-2025)",
+          "Rite Angles (2025)",
+          "Independent Consultant (2026-present)"
+        ]
+      }
+    },
+    {
+      "name": "COLLECTIONS",
+      "layout": "Premium interactive project cards. Bento grid or horizontal scroll. Cards have hard offset shadows, hover lift (-translate-y-2), image zoom on hover.",
+      "content": {
+        "projects": [
+          { "name": "DAMMN KOMBUCHA", "image": "project_1" },
+          { "name": "THE SOUND OF HOME", "image": "project_2" },
+          { "name": "D'JANAÉ", "image": "project_3" }
+        ]
+      }
+    },
+    {
+      "name": "FAQ",
+      "layout": "Playful accordion. Thick borders, yellow accents on active items.",
+      "content": {
+        "questions": ["What do you mean by disruption?", "Are you really Superman?", "Can we request a demo?"]
+      }
+    },
+    {
+      "name": "THANK_YOU",
+      "layout": "Centered layout. Large B&W portrait, playful arrows pointing down to the contact section.",
+      "content": {
+        "text": "Thanks for making it this far."
+      }
+    },
+    {
+      "name": "CONTACT",
+      "layout": "Grid layout for contact cards (Email, Phone, LinkedIn, Calendly) with click-to-copy functionality. Beside it, a clean contact form.",
+      "content": {
+        "title": "Let's do some great work together."
+      }
+    }
+  ],
+  "animations": {
+    "scroll": "GSAP-style scroll animations using Framer Motion (whileInView). Staggered reveals for lists and cards.",
+    "hover": "Microinteractions on buttons and cards (scale up slightly, shadow increases). Image scale up within overflowing hidden container.",
+    "doodles": "Parallax effect on floating doodles (use useScroll and useTransform from framer-motion)."
+  },
+  "components": {
+    "buttons": "Thick 2px solid dark borders (#1A1A24), bold text, primary (#6B88B3) or accent (#F6D34B) backgrounds, hard offset shadows (e.g., box-shadow: 4px 4px 0px #1A1A24).",
+    "cards": "White or light backgrounds, 2px borders, hard offset shadows, generous padding.",
+    "accordion": "Use Shadcn accordion, but customize with thick borders and playful font choices."
+  },
+  "instructions_to_main_agent": [
+    "IMPORTANT: Write React components using .jsx or .js extension, NOT .tsx.",
+    "Update tailwind.config.js to include the custom colors (primary: #6B88B3, secondary: #DDE6F5, accent: #F6D34B) and fonts (cabinet, space-mono, caveat, inter).",
+    "Add the font imports to src/index.css.",
+    "Use framer-motion for all scroll and hover animations. Add floating SVGs (arrows, stars, underlines) positioned absolute in sections to create the 'notebook' feel.",
+    "For the timeline, create an SVG path that weaves down the page, or use a vertical line with horizontal branches for an easier responsive approach. Mobile should be a straight vertical timeline.",
+    "All interactive elements MUST have data-testid attributes.",
+    "Install lucide-react for standard icons, but use custom SVG paths for the 'hand-drawn' feel where possible.",
+    "Use the handwritten font (Caveat) for annotations, arrows labels, and key highlight phrases (like 'How I moved in life', 'Shashank Saurav', 'of my latest work').",
+    "The UI should feel like a 'Neo-brutalist' mixed with a 'Strategist Notebook'—use hard shadows, thick borders, and playful typography pairing."
+  ]
+}
