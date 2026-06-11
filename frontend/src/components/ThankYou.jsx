@@ -16,7 +16,7 @@ const ThankYou = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="font-mono text-[10px] tracking-[0.3em] text-ink/70 mb-4">06 — THANK YOU</p>
+          <p className="font-mono text-[10px] tracking-[0.3em] text-ink/70 mb-4">06 · THANK YOU</p>
           <h2
             data-testid="thanks-headline"
             className="font-cabinet font-black text-ink text-5xl sm:text-6xl md:text-7xl leading-[0.95]"
@@ -44,12 +44,12 @@ const ThankYou = () => {
         >
           <div className="relative">
             <div className="absolute -inset-4 border-[3px] border-ink rounded-[2.5rem] rotate-[3deg]" />
-            <div className="relative w-[280px] h-[400px] md:w-[360px] md:h-[500px] flex items-end justify-center">
+            <div className="relative w-[360px] h-[500px] md:w-[560px] md:h-[760px] bg-white border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg">
               <img
-                src="/portraits/thanks-pointing.png"
+                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/zwm7fycw_image.png"
                 alt="Shashank pointing down"
                 loading="lazy"
-                className="w-full h-full object-contain object-bottom drop-shadow-[6px_6px_0_rgba(26,26,36,0.25)]"
+                className="absolute inset-0 w-full h-full object-cover object-top"
                 style={{ filter: "grayscale(1) contrast(1.05)" }}
               />
             </div>

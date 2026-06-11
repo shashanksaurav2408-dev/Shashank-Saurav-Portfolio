@@ -3,12 +3,12 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { StarBurst, HandArrow, Squiggle } from "./Doodles";
 
 const milestones = [
-  { org: "PESIT South Bangalore", role: "BE — Mechanical Engineering", period: "2012 – 2016", side: "left" },
-  { org: "ISDI Mumbai", role: "PGDD — Product Innovation & Strategy", period: "2020 – 2022", side: "right" },
+  { org: "PESIT South Bangalore", role: "BE · Mechanical Engineering", period: "2012 – 2016", side: "left" },
+  { org: "ISDI Mumbai", role: "PGDD · Product Innovation & Strategy", period: "2020 – 2022", side: "right" },
   { org: "Open Strategy & Design", role: "Senior Growth Strategist", period: "May 2022 – Sept 2023", side: "left" },
   { org: "Gozoop Group", role: "Senior Brand Strategist", period: "Oct 2023 – May 2024", side: "right" },
   { org: "Lopez Design", role: "Senior Brand Strategist", period: "June 2024 – April 2025", side: "left" },
-  { org: "Rite Angles Consultants", role: "Manager — Strategy & Marketing", period: "May 2025 – Nov 2025", side: "right" },
+  { org: "Rite Angles Consultants", role: "Manager · Strategy & Marketing", period: "May 2025 – Nov 2025", side: "right" },
   { org: "Independent Strategy Consultant", role: "Currently disrupting brands", period: "Jan 2026 – Present", side: "left" },
 ];
 
@@ -32,7 +32,7 @@ const Journey = () => {
       data-testid="journey-section"
       className="relative bg-steel py-24 md:py-32 overflow-hidden"
     >
-      {/* Flying superhero — parallax-tracks scroll */}
+      {/* Flying superhero · parallax-tracks scroll */}
       <motion.div
         style={{ x: flyX, y: flyY, rotate: flyRot, scale: flyScale }}
         className="pointer-events-none absolute top-24 left-0 w-[260px] md:w-[420px] z-20 hidden md:block"
@@ -59,7 +59,7 @@ const Journey = () => {
           transition={{ duration: 0.7 }}
           className="inline-block"
         >
-          <p className="font-mono text-[10px] tracking-[0.3em] text-powder mb-3">03 — TIMELINE</p>
+          <p className="font-mono text-[10px] tracking-[0.3em] text-powder mb-3">03 · TIMELINE</p>
           <h2
             data-testid="journey-headline"
             className="font-hand text-sun text-6xl md:text-8xl font-bold leading-none drop-shadow-[3px_3px_0_rgba(26,26,36,0.4)]"

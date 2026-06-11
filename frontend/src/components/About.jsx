@@ -61,7 +61,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="mb-6"
           >
-            <p className="font-mono text-[10px] tracking-[0.3em] text-ink/70 mb-3">02 — ORIGIN STORY</p>
+            <p className="font-mono text-[10px] tracking-[0.3em] text-ink/70 mb-3">02 · ORIGIN STORY</p>
             <h2
               data-testid="about-headline"
               className="font-cabinet font-black text-ink text-4xl sm:text-5xl md:text-6xl leading-[0.95]"
@@ -94,7 +94,7 @@ const About = () => {
             transition={{ delay: 0.25 }}
             className="text-ink/75 leading-relaxed mb-8"
           >
-            I dig into habits people don&apos;t notice, tensions brands don&apos;t see, and behaviours hiding in plain sight — then convert them into business opportunities.
+            I dig into habits people don&apos;t notice, tensions brands don&apos;t see, and behaviours hiding in plain sight · then convert them into business opportunities.
           </motion.p>
 
           <motion.div

@@ -85,7 +85,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-[1fr_auto] gap-10 items-end mb-14">
           <div className="max-w-3xl">
-            <p className="font-mono text-[10px] tracking-[0.3em] text-sun mb-4">07 — LET'S CONNECT</p>
+            <p className="font-mono text-[10px] tracking-[0.3em] text-sun mb-4">07 · LET'S CONNECT</p>
             <h2
               data-testid="contact-headline"
               className="font-cabinet font-black text-white text-4xl sm:text-5xl md:text-6xl leading-[1.05]"
@@ -93,7 +93,7 @@ const Contact = () => {
               Let&apos;s do some <span className="font-hand text-sun italic">great work</span> together.
             </h2>
             <p className="text-white/70 mt-5 text-lg max-w-xl">
-              Pick a channel, or send me a quick note below. I read every message — over coffee.
+              Pick a channel, or send me a quick note below. I read every message · over coffee.
             </p>
           </div>
           <motion.div
@@ -222,7 +222,7 @@ const Contact = () => {
 
         <div className="mt-20 pt-8 border-t border-white/15 flex flex-wrap items-center justify-between gap-4">
           <p className="font-mono text-[10px] tracking-[0.25em] uppercase text-white/60">
-            © {new Date().getFullYear()} Shashank Saurav — Built with curiosity.
+            © {new Date().getFullYear()} Shashank Saurav · Built with curiosity.
           </p>
           <p className="font-hand text-2xl text-sun">stay curious ✦</p>
         </div>

@@ -69,7 +69,7 @@ const Collections = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="flex items-end justify-between flex-wrap gap-6 mb-12">
           <div>
-            <p className="font-mono text-[10px] tracking-[0.3em] text-ink/70 mb-3">04 — SELECTED WORK</p>
+            <p className="font-mono text-[10px] tracking-[0.3em] text-ink/70 mb-3">04 · SELECTED WORK</p>
             <h2
               data-testid="collections-headline"
               className="font-cabinet font-black text-ink text-5xl sm:text-6xl md:text-7xl leading-none"

@@ -109,14 +109,14 @@ const Hero = () => {
             <motion.div
               whileHover={{ rotate: -1, y: -4 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="relative w-[280px] h-[400px] md:w-[360px] md:h-[500px] flex items-end justify-center overflow-visible"
+              className="relative w-[360px] h-[500px] md:w-[560px] md:h-[760px] bg-white border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg"
               data-testid="hero-portrait"
             >
               <img
-                src="/portraits/hero-suit.png"
+                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/rnsqo3p1_image.png"
                 alt="Shashank Saurav portrait"
                 loading="eager"
-                className="w-full h-full object-contain object-bottom drop-shadow-[6px_6px_0_rgba(26,26,36,0.35)]"
+                className="absolute inset-0 w-full h-full object-cover object-top"
                 style={{ filter: "grayscale(1) contrast(1.05)" }}
               />
             </motion.div>

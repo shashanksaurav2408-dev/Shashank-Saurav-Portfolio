@@ -5,7 +5,7 @@ import { StarBurst, Squiggle } from "./Doodles";
 const faqs = [
   {
     q: "What do you mean by disruption?",
-    a: "Some problems are obvious. Others hide in habits, assumptions, and everyday behaviours. I find the latter — and turn them into business opportunities people didn't know existed.",
+    a: "Some problems are obvious. Others hide in habits, assumptions, and everyday behaviours. I find the latter · and turn them into business opportunities people didn't know existed.",
   },
   {
     q: "Are you really Superman?",
@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "Can we request a demo or case challenge?",
-    a: "Absolutely. Curiosity is my favourite superpower. Send me a category, a brief, or a stuck brand — and I'll walk you through how I'd unpack it.",
+    a: "Absolutely. Curiosity is my favourite superpower. Send me a category, a brief, or a stuck brand · and I'll walk you through how I'd unpack it.",
   },
 ];
 
@@ -28,7 +28,7 @@ const FAQ = () => {
     >
       <div className="max-w-5xl mx-auto px-6 md:px-10">
         <div className="mb-12">
-          <p className="font-mono text-[10px] tracking-[0.3em] text-powder mb-3">05 — CURIOSITY</p>
+          <p className="font-mono text-[10px] tracking-[0.3em] text-powder mb-3">05 · CURIOSITY</p>
           <h2
             data-testid="faq-headline"
             className="font-cabinet font-black text-white text-5xl md:text-7xl leading-none"
