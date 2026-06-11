@@ -44,7 +44,7 @@ const ThankYou = () => {
         >
           <div className="relative">
             <div className="absolute -inset-4 border-[3px] border-ink rounded-[2.5rem] rotate-[3deg]" />
-            <div className="relative w-[360px] h-[500px] md:w-[560px] md:h-[760px] bg-white border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg">
+            <div className="relative w-[300px] h-[420px] md:w-[460px] md:h-[620px] bg-white border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg">
               <img
                 src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/zwm7fycw_image.png"
                 alt="Shashank pointing down"

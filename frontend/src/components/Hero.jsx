@@ -109,7 +109,7 @@ const Hero = () => {
             <motion.div
               whileHover={{ rotate: -1, y: -4 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="relative w-[360px] h-[500px] md:w-[560px] md:h-[760px] bg-white border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg"
+              className="relative w-[300px] h-[420px] md:w-[460px] md:h-[620px] bg-white border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg"
               data-testid="hero-portrait"
             >
               <img

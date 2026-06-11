@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { StarBurst, HandArrow, Squiggle } from "./Doodles";
 
 const milestones = [
@@ -13,43 +13,12 @@ const milestones = [
 ];
 
 const Journey = () => {
-  const ref = React.useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-
-  // Flying hero soars from upper-left across the section
-  const flyX = useTransform(scrollYProgress, [0, 1], ["-8%", "62%"]);
-  const flyY = useTransform(scrollYProgress, [0, 1], ["0%", "85%"]);
-  const flyRot = useTransform(scrollYProgress, [0, 1], [-12, 8]);
-  const flyScale = useTransform(scrollYProgress, [0, 0.5, 1], [0.9, 1, 0.85]);
-
   return (
     <section
-      ref={ref}
       id="journey"
       data-testid="journey-section"
       className="relative bg-steel py-24 md:py-32 overflow-hidden"
     >
-      {/* Flying superhero · parallax-tracks scroll */}
-      <motion.div
-        style={{ x: flyX, y: flyY, rotate: flyRot, scale: flyScale }}
-        className="pointer-events-none absolute top-24 left-0 w-[260px] md:w-[420px] z-20 hidden md:block"
-        aria-hidden
-      >
-        <img
-          src="/portraits/super-flying.png"
-          alt=""
-          className="w-full h-auto drop-shadow-[6px_6px_0_rgba(26,26,36,0.5)]"
-        />
-        {/* Speed trails */}
-        <svg viewBox="0 0 200 80" className="absolute -left-24 top-1/3 w-32 h-12 -rotate-12 opacity-80" fill="none">
-          <path d="M5 40 C 40 20, 80 60, 120 40 S 180 20, 195 40" stroke="#F6D34B" strokeWidth="4" strokeLinecap="round" />
-          <path d="M5 20 C 50 5, 90 35, 140 20" stroke="#DDE6F5" strokeWidth="3" strokeLinecap="round" opacity="0.7" />
-        </svg>
-      </motion.div>
-
       {/* Title block */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 mb-16 relative z-10">
         <motion.div
