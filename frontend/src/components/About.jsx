@@ -31,38 +31,14 @@ const About = () => {
         >
           <div className="relative w-full max-w-[420px] mx-auto">
             <div className="absolute -inset-3 border-[3px] border-ink rounded-[2rem] rotate-[-2deg]" />
-            <div className="relative bg-white border-2 border-ink rounded-[1.8rem] overflow-hidden shadow-hardLg">
-              <svg viewBox="0 0 360 460" className="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="aboutBg" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#DDE6F5" />
-                    <stop offset="100%" stopColor="#b1c2dd" />
-                  </linearGradient>
-                </defs>
-                <rect width="360" height="460" fill="url(#aboutBg)" />
-                {/* Body / vest */}
-                <path d="M70 460 C 80 360, 130 330, 180 330 C 230 330, 280 360, 290 460 Z" fill="#1A1A24" />
-                {/* Hi-vis vest */}
-                <path d="M105 360 L 105 460 L 145 460 L 145 360 Z" fill="#F6D34B" />
-                <path d="M215 360 L 215 460 L 255 460 L 255 360 Z" fill="#F6D34B" />
-                {/* Reflective bands */}
-                <rect x="105" y="395" width="40" height="6" fill="#fff" />
-                <rect x="215" y="395" width="40" height="6" fill="#fff" />
-                {/* Head */}
-                <ellipse cx="180" cy="235" rx="62" ry="74" fill="#6d574b" />
-                {/* Beard */}
-                <path d="M130 250 C 140 305, 220 305, 230 250 C 220 285, 140 285, 130 250 Z" fill="#1A1A24" />
-                {/* Smile */}
-                <path d="M158 268 Q 180 280, 202 268" stroke="#1A1A24" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                {/* Helmet */}
-                <path d="M108 200 C 108 145, 252 145, 252 200 L 252 215 L 108 215 Z" fill="#ffffff" stroke="#1A1A24" strokeWidth="3" />
-                <rect x="108" y="208" width="144" height="10" fill="#ffffff" stroke="#1A1A24" strokeWidth="3" />
-                <rect x="172" y="155" width="16" height="50" fill="#1A1A24" opacity="0.15" />
-                {/* Arm holding wrench */}
-                <path d="M225 360 C 270 340, 290 300, 285 280" stroke="#1A1A24" strokeWidth="22" strokeLinecap="round" fill="none" />
-                <circle cx="288" cy="278" r="14" fill="#9aa3ad" stroke="#1A1A24" strokeWidth="2" />
-                <rect x="282" y="245" width="12" height="40" fill="#9aa3ad" stroke="#1A1A24" strokeWidth="2" />
-              </svg>
+            <div className="relative bg-white border-2 border-ink rounded-[1.8rem] overflow-hidden shadow-hardLg aspect-[4/5]">
+              <img
+                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/nspkyfti_image.png"
+                alt="Shashank Saurav as an engineer with hard hat"
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover object-center grayscale"
+                style={{ filter: "grayscale(1) contrast(1.05)" }}
+              />
             </div>
             {/* Doodles around */}
             <div className="absolute -top-8 -right-6 w-20 h-14 rotate-[15deg]">

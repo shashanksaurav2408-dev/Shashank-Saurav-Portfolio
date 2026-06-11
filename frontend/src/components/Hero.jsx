@@ -88,7 +88,7 @@ const Hero = () => {
               whileHover={{ scale: 1.04, y: -2 }}
               whileTap={{ scale: 0.97 }}
               data-testid="hero-cta-lets-disrupt"
-              onClick={() => scrollTo("about")}
+              onClick={() => scrollTo("contact")}
               className="bg-sun text-ink font-cabinet font-bold text-lg md:text-xl px-8 py-4 border-2 border-ink rounded-full shadow-hard hover:shadow-hardLg transition-all duration-200"
             >
               Let&apos;s Disrupt →
