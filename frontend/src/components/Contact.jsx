@@ -83,17 +83,38 @@ const Contact = () => {
       className="relative bg-ink text-white py-24 md:py-32 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <div className="mb-14 max-w-3xl">
-          <p className="font-mono text-[10px] tracking-[0.3em] text-sun mb-4">07 — LET'S CONNECT</p>
-          <h2
-            data-testid="contact-headline"
-            className="font-cabinet font-black text-white text-4xl sm:text-5xl md:text-6xl leading-[1.05]"
+        <div className="grid md:grid-cols-[1fr_auto] gap-10 items-end mb-14">
+          <div className="max-w-3xl">
+            <p className="font-mono text-[10px] tracking-[0.3em] text-sun mb-4">07 — LET'S CONNECT</p>
+            <h2
+              data-testid="contact-headline"
+              className="font-cabinet font-black text-white text-4xl sm:text-5xl md:text-6xl leading-[1.05]"
+            >
+              Let&apos;s do some <span className="font-hand text-sun italic">great work</span> together.
+            </h2>
+            <p className="text-white/70 mt-5 text-lg max-w-xl">
+              Pick a channel, or send me a quick note below. I read every message — over coffee.
+            </p>
+          </div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9, rotate: 4 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: -2 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative w-[180px] md:w-[220px] flex-shrink-0 hidden sm:block"
+            data-testid="contact-coffee-portrait"
           >
-            Let&apos;s do some <span className="font-hand text-sun italic">great work</span> together.
-          </h2>
-          <p className="text-white/70 mt-5 text-lg max-w-xl">
-            Pick a channel, or send me a quick note below. I read every message.
-          </p>
+            <div className="absolute -inset-2 border-[3px] border-sun rounded-[1.6rem] rotate-3" />
+            <div className="relative bg-white border-2 border-sun rounded-[1.4rem] overflow-hidden shadow-hardYellow aspect-square">
+              <img
+                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/85rfuhj4_image.png"
+                alt="Shashank offering coffee"
+                loading="lazy"
+                className="w-full h-full object-cover object-top grayscale"
+              />
+            </div>
+            <p className="absolute -bottom-6 left-1/2 -translate-x-1/2 font-hand text-2xl text-sun whitespace-nowrap rotate-[-4deg]">coffee&apos;s on me ☕</p>
+          </motion.div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-10">

@@ -112,38 +112,13 @@ const Hero = () => {
               className="relative w-[260px] h-[360px] md:w-[340px] md:h-[460px] bg-powder border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg"
               data-testid="hero-portrait"
             >
-              {/* Placeholder silhouette portrait */}
-              <svg viewBox="0 0 340 460" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#DDE6F5" />
-                    <stop offset="100%" stopColor="#a9b9d3" />
-                  </linearGradient>
-                  <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#3a3a48" />
-                    <stop offset="100%" stopColor="#1A1A24" />
-                  </linearGradient>
-                </defs>
-                <rect width="340" height="460" fill="url(#bg1)" />
-                {/* Body */}
-                <path d="M50 460 C 60 360, 110 320, 170 320 C 230 320, 280 360, 290 460 Z" fill="url(#suit)" />
-                {/* Shirt collar */}
-                <path d="M150 320 L170 360 L190 320 Z" fill="#f5f5f5" />
-                <path d="M165 340 L170 460 L175 340 Z" fill="#1A1A24" />
-                {/* Neck */}
-                <rect x="155" y="280" width="30" height="50" fill="#5a4a40" />
-                {/* Head */}
-                <ellipse cx="170" cy="220" rx="68" ry="80" fill="#6d574b" />
-                {/* Hair */}
-                <path d="M105 200 C 110 145, 230 145, 235 205 C 235 175, 215 155, 170 152 C 125 155, 105 175, 105 200 Z" fill="#1A1A24" />
-                {/* Beard */}
-                <path d="M115 240 C 125 295, 215 295, 225 240 C 215 275, 125 275, 115 240 Z" fill="#1A1A24" />
-                {/* Eyes */}
-                <ellipse cx="145" cy="218" rx="3" ry="4" fill="#1A1A24" />
-                <ellipse cx="195" cy="218" rx="3" ry="4" fill="#1A1A24" />
-                {/* Smile */}
-                <path d="M150 252 Q 170 268, 190 252" stroke="#1A1A24" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-              </svg>
+              <img
+                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/rnsqo3p1_image.png"
+                alt="Shashank Saurav portrait"
+                loading="eager"
+                className="absolute inset-0 w-full h-full object-cover object-top grayscale"
+                style={{ filter: "grayscale(1) contrast(1.05)" }}
+              />
             </motion.div>
             {/* corner sticky */}
             <div className="absolute -top-6 -left-6 w-12 h-12 hidden md:block">

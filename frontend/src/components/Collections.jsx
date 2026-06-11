@@ -9,19 +9,8 @@ const projects = [
     summary:
       "The new way for Indians to socialise. A differentiated positioning strategy for a new functional beverage brand.",
     tag: "Brand Positioning",
-    href: "#",
-    palette: { bg: "#F6D34B", img: "#ff5a8a" },
-    cover: (
-      <svg viewBox="0 0 400 280" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="280" fill="#ffe06b" />
-        <rect x="20" y="20" width="170" height="240" fill="#ff5a8a" />
-        <rect x="210" y="20" width="170" height="240" fill="#fff196" />
-        <rect x="65" y="50" width="80" height="180" rx="14" fill="#ff2d70" />
-        <rect x="255" y="50" width="80" height="180" rx="14" fill="#fff7d1" />
-        <text x="105" y="150" textAnchor="middle" fontFamily="Cabinet Grotesk" fontWeight="900" fontSize="22" fill="#1A1A24">DAMMN</text>
-        <text x="295" y="150" textAnchor="middle" fontFamily="Cabinet Grotesk" fontWeight="900" fontSize="22" fill="#1A1A24">DAMMN</text>
-      </svg>
-    ),
+    href: "https://canva.link/t1eob216gi5i5n8",
+    image: "https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/7sbadfir_image.png",
   },
   {
     id: "sound-of-home",
@@ -29,17 +18,33 @@ const projects = [
     summary:
       "Understanding how a utilitarian kitchen appliance became a symbol of care, prosperity and belonging.",
     tag: "Cultural Research",
-    href: "#",
-    palette: { bg: "#1A1A24", img: "#F6D34B" },
+    href: "https://canva.link/ydj3yqaj4vjcxyd",
+    image: null,
     cover: (
-      <svg viewBox="0 0 400 280" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <rect width="400" height="280" fill="#1A1A24" />
-        <rect x="0" y="40" width="400" height="60" fill="#F6D34B" />
-        <text x="200" y="82" textAnchor="middle" fontFamily="Cabinet Grotesk" fontWeight="900" fontSize="30" fill="#1A1A24">THE SOUND OF HOME</text>
-        <ellipse cx="200" cy="200" rx="80" ry="20" fill="#3a3a48" />
-        <rect x="150" y="140" width="100" height="60" rx="6" fill="#9aa3ad" />
-        <rect x="195" y="120" width="10" height="20" fill="#9aa3ad" />
-        <path d="M170 110 Q 180 90, 200 100 Q 220 90, 230 110" stroke="#fff" strokeWidth="3" fill="none" opacity="0.6" />
+      <svg viewBox="0 0 400 300" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="steamGrad" cx="0.5" cy="0.3">
+            <stop offset="0%" stopColor="#3a3a48" />
+            <stop offset="100%" stopColor="#1A1A24" />
+          </radialGradient>
+        </defs>
+        <rect width="400" height="300" fill="url(#steamGrad)" />
+        {/* Steam */}
+        <path d="M170 90 Q 175 65, 195 75 Q 215 65, 220 85 Q 240 70, 245 95" stroke="#fff" strokeWidth="2.5" fill="none" opacity="0.45" strokeLinecap="round" />
+        <path d="M155 110 Q 162 85, 178 95" stroke="#fff" strokeWidth="2" fill="none" opacity="0.3" strokeLinecap="round" />
+        {/* Title bar */}
+        <rect x="0" y="118" width="400" height="58" fill="#F6D34B" />
+        <text x="200" y="158" textAnchor="middle" fontFamily="Cabinet Grotesk, sans-serif" fontWeight="900" fontSize="30" fill="#1A1A24" letterSpacing="0.02em">THE SOUND OF HOME</text>
+        {/* Pressure cooker */}
+        <ellipse cx="200" cy="265" rx="90" ry="14" fill="#0e0e16" opacity="0.7" />
+        <rect x="150" y="195" width="100" height="65" rx="6" fill="#9aa3ad" stroke="#1A1A24" strokeWidth="1.5" />
+        <rect x="148" y="190" width="104" height="10" rx="3" fill="#7d848d" stroke="#1A1A24" strokeWidth="1.5" />
+        <rect x="194" y="170" width="12" height="22" fill="#5a6068" stroke="#1A1A24" strokeWidth="1.5" />
+        <circle cx="200" cy="172" r="6" fill="#1A1A24" />
+        <rect x="120" y="220" width="30" height="6" rx="2" fill="#5a6068" />
+        <rect x="250" y="220" width="30" height="6" rx="2" fill="#5a6068" />
+        {/* Hand-drawn squiggle accent */}
+        <path d="M280 100 Q 295 95, 305 110 Q 318 100, 330 115" stroke="#F6D34B" strokeWidth="2" fill="none" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -49,27 +54,8 @@ const projects = [
     summary:
       "A consumer-centric strategic framework and positioning system for a luxury fragrance brand entering India.",
     tag: "Luxury Strategy",
-    href: "#",
-    palette: { bg: "#DDE6F5", img: "#6B88B3" },
-    cover: (
-      <svg viewBox="0 0 400 280" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="silk" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#f3e3c0" />
-            <stop offset="100%" stopColor="#c8a978" />
-          </linearGradient>
-        </defs>
-        <rect width="400" height="280" fill="url(#silk)" />
-        {[60, 140, 220, 300].map((x, i) => (
-          <g key={x} transform={`translate(${x},80)`}>
-            <rect x="-22" y="40" width="44" height="120" fill={["#b81e3b", "#1f5b3a", "#d97aa3", "#e0a93b"][i]} stroke="#1A1A24" strokeWidth="1.5" />
-            <rect x="-12" y="20" width="24" height="22" fill="#1A1A24" />
-            <circle cx="0" cy="14" r="14" fill={["#b81e3b", "#1f5b3a", "#d97aa3", "#e0a93b"][i]} stroke="#1A1A24" strokeWidth="1.5" />
-            <text x="0" y="105" textAnchor="middle" fontFamily="Cabinet Grotesk" fontWeight="900" fontSize="9" fill="#1A1A24">D'JANAÉ</text>
-          </g>
-        ))}
-      </svg>
-    ),
+    href: "https://canva.link/jyi5fg4h576wiqo",
+    image: "https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/9m2rjn5z_image.png",
   },
 ];
 
@@ -111,7 +97,16 @@ const Collections = () => {
             >
               <div className="relative overflow-hidden border-b-2 border-ink">
                 <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.4 }} className="aspect-[4/3]">
-                  {p.cover}
+                  {p.image ? (
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    p.cover
+                  )}
                 </motion.div>
                 <span className="absolute top-3 left-3 bg-ink text-sun font-mono text-[10px] tracking-[0.2em] px-2 py-1 rounded-full">
                   {p.tag}

@@ -45,29 +45,13 @@ const ThankYou = () => {
           <div className="relative">
             <div className="absolute -inset-4 border-[3px] border-ink rounded-[2.5rem] rotate-[3deg]" />
             <div className="relative w-[260px] h-[360px] md:w-[340px] md:h-[460px] bg-white border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg">
-              <svg viewBox="0 0 340 460" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="ty-bg" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#EFF3FB" />
-                    <stop offset="100%" stopColor="#c5d2e8" />
-                  </linearGradient>
-                </defs>
-                <rect width="340" height="460" fill="url(#ty-bg)" />
-                {/* Casual shirt */}
-                <path d="M50 460 C 60 350, 110 320, 170 320 C 230 320, 280 350, 290 460 Z" fill="#1A1A24" />
-                <rect x="165" y="335" width="10" height="125" fill="#3a3a48" />
-                {/* Head */}
-                <ellipse cx="170" cy="220" rx="65" ry="78" fill="#6d574b" />
-                <path d="M104 200 C 110 145, 230 145, 236 200 C 215 165, 125 165, 104 200 Z" fill="#1A1A24" />
-                <path d="M120 245 C 130 295, 210 295, 220 245 C 210 280, 130 280, 120 245 Z" fill="#1A1A24" />
-                {/* Glasses */}
-                <circle cx="146" cy="218" r="14" fill="none" stroke="#1A1A24" strokeWidth="3" />
-                <circle cx="194" cy="218" r="14" fill="none" stroke="#1A1A24" strokeWidth="3" />
-                <line x1="160" y1="218" x2="180" y2="218" stroke="#1A1A24" strokeWidth="3" />
-                {/* Pointing down hands */}
-                <path d="M80 380 L 60 440 L 70 445 L 90 390 Z" fill="#6d574b" stroke="#1A1A24" strokeWidth="1.5" />
-                <path d="M260 380 L 280 440 L 270 445 L 250 390 Z" fill="#6d574b" stroke="#1A1A24" strokeWidth="1.5" />
-              </svg>
+              <img
+                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/zwm7fycw_image.png"
+                alt="Shashank pointing down"
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover object-top grayscale"
+                style={{ filter: "grayscale(1) contrast(1.05)" }}
+              />
             </div>
           </div>
         </motion.div>
