@@ -26,7 +26,7 @@ const contactCards = [
   },
   {
     id: "linkedin",
-    label: "LinkedIn",
+    label: "Shashank / LinkedIn",
     value: "linkedin.com/in/shashank-saurav-125664a2",
     href: "https://www.linkedin.com/in/shashank-saurav-125664a2/",
     Icon: Linkedin,
@@ -34,7 +34,7 @@ const contactCards = [
   },
   {
     id: "calendly",
-    label: "Calendly",
+    label: "Shashank / Calendly",
     value: "calendly.com/shashanksaurav2408/30min",
     href: "https://calendly.com/shashanksaurav2408/30min",
     Icon: Calendar,

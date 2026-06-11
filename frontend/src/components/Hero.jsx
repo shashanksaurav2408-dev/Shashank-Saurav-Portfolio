@@ -97,21 +97,19 @@ const Hero = () => {
           className="relative flex justify-center md:justify-end"
         >
           <div className="relative flex items-end justify-center md:justify-end">
-            {/* Decorative outlined frame (yellow border that the portrait will break out of) */}
-            <div className="relative w-[300px] md:w-[480px] aspect-[3/4]">
-              <div className="absolute inset-0 border-[3px] border-sun rounded-[2.5rem] rotate-[2deg] bg-powder/30 backdrop-blur-[1px]" />
-              <div className="absolute inset-2 border-2 border-ink rounded-[2rem] rotate-[2deg] mix-blend-multiply opacity-25" />
-              {/* Portrait - intentionally overflowing top and bottom of frame */}
-              <motion.img
-                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/6nk5nwy7_a2150b91-7f5b-423b-9bde-f90486e8f226.png"
-                alt="Shashank Saurav portrait"
-                loading="eager"
-                whileHover={{ y: -6 }}
-                transition={{ type: "spring", stiffness: 200 }}
-                style={{ filter: "grayscale(1) contrast(1.05)" }}
-                data-testid="hero-portrait"
-                className="absolute -bottom-12 md:-bottom-16 left-1/2 -translate-x-1/2 h-[120%] w-auto max-w-none drop-shadow-[8px_8px_0_rgba(26,26,36,0.35)]"
-              />
+            <div className="relative w-[320px] md:w-[460px] aspect-[3/4]">
+              <div className="absolute inset-0 border-[3px] border-sun rounded-[2.5rem] rotate-[2deg] bg-powder/30 overflow-hidden">
+                <motion.img
+                  src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/6nk5nwy7_a2150b91-7f5b-423b-9bde-f90486e8f226.png"
+                  alt="Shashank Saurav portrait"
+                  loading="eager"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 200 }}
+                  style={{ filter: "grayscale(1) contrast(1.05)" }}
+                  data-testid="hero-portrait"
+                  className="absolute inset-0 w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
           </div>
         </motion.div>

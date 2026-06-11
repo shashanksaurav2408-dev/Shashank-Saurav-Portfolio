@@ -42,16 +42,17 @@ const ThankYou = () => {
             transition={{ duration: 0.7 }}
             className="relative flex justify-center md:justify-end"
           >
-            <div className="relative w-[320px] md:w-[480px] aspect-[3/4]">
-              <div className="absolute inset-0 border-[3px] border-sun rounded-[2.5rem] rotate-[3deg] bg-powder/40" />
-              <img
-                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/rxsmi2tf_26beca01-1e69-4234-93c0-4dacc7b61b43.png"
-                alt="Shashank pointing down"
-                loading="lazy"
-                style={{ filter: "grayscale(1) contrast(1.05)" }}
-                data-testid="thanks-portrait"
-                className="absolute -bottom-10 md:-bottom-16 left-1/2 -translate-x-1/2 h-[120%] w-auto max-w-none drop-shadow-[8px_8px_0_rgba(26,26,36,0.25)]"
-              />
+            <div className="relative w-[320px] md:w-[460px] aspect-[3/4]">
+              <div className="absolute inset-0 border-[3px] border-sun rounded-[2.5rem] rotate-[3deg] bg-powder/30 overflow-hidden">
+                <img
+                  src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/rxsmi2tf_26beca01-1e69-4234-93c0-4dacc7b61b43.png"
+                  alt="Shashank pointing down"
+                  loading="lazy"
+                  style={{ filter: "grayscale(1) contrast(1.05)" }}
+                  data-testid="thanks-portrait"
+                  className="absolute inset-0 w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
           </motion.div>
       </div>
