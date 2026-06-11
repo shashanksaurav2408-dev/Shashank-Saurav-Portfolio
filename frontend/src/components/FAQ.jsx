@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { StarBurst, Squiggle } from "./Doodles";
+import { Squiggle } from "./Doodles";
 
 const faqs = [
   {
@@ -88,9 +88,6 @@ const FAQ = () => {
         </div>
       </div>
 
-      <div className="absolute top-16 right-10 w-14 h-14 hidden md:block">
-        <StarBurst className="w-full h-full" />
-      </div>
       <div className="absolute bottom-12 left-10 w-32 h-10 hidden md:block opacity-90">
         <Squiggle className="w-full h-full" color="#F6D34B" />
       </div>

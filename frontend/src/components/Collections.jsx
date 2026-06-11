@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Squiggle, HandArrow, StarBurst } from "./Doodles";
+import { Squiggle, HandArrow } from "./Doodles";
 
 const projects = [
   {
@@ -19,34 +19,7 @@ const projects = [
       "Understanding how a utilitarian kitchen appliance became a symbol of care, prosperity and belonging.",
     tag: "Cultural Research",
     href: "https://canva.link/ydj3yqaj4vjcxyd",
-    image: null,
-    cover: (
-      <svg viewBox="0 0 400 300" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="steamGrad" cx="0.5" cy="0.3">
-            <stop offset="0%" stopColor="#3a3a48" />
-            <stop offset="100%" stopColor="#1A1A24" />
-          </radialGradient>
-        </defs>
-        <rect width="400" height="300" fill="url(#steamGrad)" />
-        {/* Steam */}
-        <path d="M170 90 Q 175 65, 195 75 Q 215 65, 220 85 Q 240 70, 245 95" stroke="#fff" strokeWidth="2.5" fill="none" opacity="0.45" strokeLinecap="round" />
-        <path d="M155 110 Q 162 85, 178 95" stroke="#fff" strokeWidth="2" fill="none" opacity="0.3" strokeLinecap="round" />
-        {/* Title bar */}
-        <rect x="0" y="118" width="400" height="58" fill="#F6D34B" />
-        <text x="200" y="158" textAnchor="middle" fontFamily="Cabinet Grotesk, sans-serif" fontWeight="900" fontSize="30" fill="#1A1A24" letterSpacing="0.02em">THE SOUND OF HOME</text>
-        {/* Pressure cooker */}
-        <ellipse cx="200" cy="265" rx="90" ry="14" fill="#0e0e16" opacity="0.7" />
-        <rect x="150" y="195" width="100" height="65" rx="6" fill="#9aa3ad" stroke="#1A1A24" strokeWidth="1.5" />
-        <rect x="148" y="190" width="104" height="10" rx="3" fill="#7d848d" stroke="#1A1A24" strokeWidth="1.5" />
-        <rect x="194" y="170" width="12" height="22" fill="#5a6068" stroke="#1A1A24" strokeWidth="1.5" />
-        <circle cx="200" cy="172" r="6" fill="#1A1A24" />
-        <rect x="120" y="220" width="30" height="6" rx="2" fill="#5a6068" />
-        <rect x="250" y="220" width="30" height="6" rx="2" fill="#5a6068" />
-        {/* Hand-drawn squiggle accent */}
-        <path d="M280 100 Q 295 95, 305 110 Q 318 100, 330 115" stroke="#F6D34B" strokeWidth="2" fill="none" strokeLinecap="round" />
-      </svg>
-    ),
+    image: "https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/6wjnwzjm_image.png",
   },
   {
     id: "djanae",
@@ -97,16 +70,12 @@ const Collections = () => {
             >
               <div className="relative overflow-hidden border-b-2 border-ink">
                 <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.4 }} className="aspect-[4/3]">
-                  {p.image ? (
-                    <img
-                      src={p.image}
-                      alt={p.title}
-                      loading="lazy"
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    p.cover
-                  )}
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
                 </motion.div>
                 <span className="absolute top-3 left-3 bg-ink text-sun font-mono text-[10px] tracking-[0.2em] px-2 py-1 rounded-full">
                   {p.tag}
@@ -131,9 +100,6 @@ const Collections = () => {
         </div>
 
         {/* Doodles */}
-        <div className="absolute -bottom-4 right-6 hidden md:block w-14 h-14 opacity-90">
-          <StarBurst className="w-full h-full" />
-        </div>
         <div className="absolute top-32 right-12 hidden md:block w-24 h-16 rotate-12 opacity-80">
           <HandArrow className="w-full h-full" />
         </div>

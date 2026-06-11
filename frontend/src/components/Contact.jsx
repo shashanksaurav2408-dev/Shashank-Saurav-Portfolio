@@ -11,32 +11,32 @@ const contactCards = [
   {
     id: "email",
     label: "Email",
-    value: "hello@shashanksaurav.com",
-    href: "mailto:hello@shashanksaurav.com",
+    value: "shashanksaurav2408@gmail.com",
+    href: "mailto:shashanksaurav2408@gmail.com",
     Icon: Mail,
     bg: "bg-sun",
   },
   {
     id: "phone",
     label: "Phone",
-    value: "+91 98765 43210",
-    href: "tel:+919876543210",
+    value: "+91 87097 79345",
+    href: "tel:+918709779345",
     Icon: Phone,
     bg: "bg-powder",
   },
   {
     id: "linkedin",
     label: "LinkedIn",
-    value: "linkedin.com/in/shashanksaurav",
-    href: "https://linkedin.com/in/shashanksaurav",
+    value: "linkedin.com/in/shashank-saurav-125664a2",
+    href: "https://www.linkedin.com/in/shashank-saurav-125664a2/",
     Icon: Linkedin,
     bg: "bg-white",
   },
   {
     id: "calendly",
     label: "Calendly",
-    value: "calendly.com/shashanksaurav",
-    href: "https://calendly.com/shashanksaurav",
+    value: "calendly.com/shashanksaurav2408/30min",
+    href: "https://calendly.com/shashanksaurav2408/30min",
     Icon: Calendar,
     bg: "bg-sun",
   },
@@ -82,10 +82,10 @@ const Contact = () => {
       data-testid="contact-section"
       className="relative bg-ink text-white py-24 md:py-32 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 relative">
         <div className="grid md:grid-cols-[1fr_auto] gap-10 items-end mb-14">
           <div className="max-w-3xl">
-            <p className="font-mono text-[10px] tracking-[0.3em] text-sun mb-4">07 · LET'S CONNECT</p>
+            <p className="font-mono text-[10px] tracking-[0.3em] text-sun mb-4">07 · LET&apos;S CONNECT</p>
             <h2
               data-testid="contact-headline"
               className="font-cabinet font-black text-white text-4xl sm:text-5xl md:text-6xl leading-[1.05]"
@@ -93,15 +93,15 @@ const Contact = () => {
               Let&apos;s do some <span className="font-hand text-sun italic">great work</span> together.
             </h2>
             <p className="text-white/70 mt-5 text-lg max-w-xl">
-              Pick a channel, or send me a quick note below. I read every message · over coffee.
+              Pick a channel, or send me a quick note below. I read every message, over coffee.
             </p>
           </div>
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: 4 }}
-            whileInView={{ opacity: 1, scale: 1, rotate: -2 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: -3 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative w-[200px] md:w-[260px] flex-shrink-0 hidden sm:block"
+            className="relative w-[280px] md:w-[360px] flex-shrink-0 hidden sm:block"
             data-testid="contact-coffee-portrait"
           >
             <div className="relative aspect-square flex items-end justify-center">
@@ -110,10 +110,10 @@ const Contact = () => {
                 alt="Shashank offering coffee"
                 loading="lazy"
                 className="w-full h-full object-contain object-bottom"
-                style={{ filter: "grayscale(1) contrast(1.05) drop-shadow(4px 4px 0 rgba(246,211,75,0.4))" }}
+                style={{ filter: "grayscale(1) contrast(1.05) drop-shadow(6px 6px 0 rgba(246,211,75,0.5))" }}
               />
             </div>
-            <p className="absolute -bottom-4 left-1/2 -translate-x-1/2 font-hand text-2xl text-sun whitespace-nowrap rotate-[-4deg]">coffee&apos;s on me ☕</p>
+            <p className="absolute -bottom-4 left-1/2 -translate-x-1/2 font-hand text-2xl md:text-3xl text-sun whitespace-nowrap rotate-[-4deg]">coffee&apos;s on me ☕</p>
           </motion.div>
         </div>
 
@@ -168,7 +168,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="bg-powder text-ink border-2 border-ink rounded-3xl p-6 md:p-8 shadow-hardLg"
+            className="relative z-10 bg-powder text-ink border-2 border-ink rounded-3xl p-6 md:p-8 shadow-hardLg"
             data-testid="contact-form"
           >
             <p className="font-mono text-[10px] tracking-[0.3em] uppercase mb-2 opacity-80">Send a note</p>

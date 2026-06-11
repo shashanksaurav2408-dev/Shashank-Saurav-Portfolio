@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowSquiggle, StarBurst, Squiggle, PaperCut, HandArrow } from "./Doodles";
+import { ArrowSquiggle, Squiggle, PaperCut, HandArrow } from "./Doodles";
 
 const scrollTo = (id) => {
   const el = document.getElementById(id);
@@ -15,13 +15,6 @@ const Hero = () => {
       className="relative min-h-screen bg-steel overflow-hidden flex items-center pt-24 pb-12"
     >
       {/* Floating doodles */}
-      <motion.div
-        animate={{ y: [0, -16, 0], rotate: [0, 4, 0] }}
-        transition={{ duration: 6, repeat: Infinity }}
-        className="absolute top-28 left-[8%] w-20 h-20 hidden md:block"
-      >
-        <StarBurst className="w-full h-full" />
-      </motion.div>
       <motion.div
         animate={{ y: [0, 14, 0], rotate: [0, -3, 0] }}
         transition={{ duration: 7, repeat: Infinity }}
@@ -103,26 +96,22 @@ const Hero = () => {
           transition={{ delay: 0.3, duration: 0.7 }}
           className="relative flex justify-center md:justify-end"
         >
-          <div className="relative">
-            {/* Decorative outlined frame */}
-            <div className="absolute -inset-4 border-[3px] border-sun rounded-[2.5rem] rotate-[2deg]" />
-            <motion.div
-              whileHover={{ rotate: -1, y: -4 }}
-              transition={{ type: "spring", stiffness: 200 }}
-              className="relative w-[300px] h-[420px] md:w-[460px] md:h-[620px] bg-white border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg"
-              data-testid="hero-portrait"
-            >
-              <img
-                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/rnsqo3p1_image.png"
+          <div className="relative flex items-end justify-center md:justify-end">
+            {/* Decorative outlined frame (yellow border that the portrait will break out of) */}
+            <div className="relative w-[300px] md:w-[480px] aspect-[3/4]">
+              <div className="absolute inset-0 border-[3px] border-sun rounded-[2.5rem] rotate-[2deg] bg-powder/30 backdrop-blur-[1px]" />
+              <div className="absolute inset-2 border-2 border-ink rounded-[2rem] rotate-[2deg] mix-blend-multiply opacity-25" />
+              {/* Portrait - intentionally overflowing top and bottom of frame */}
+              <motion.img
+                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/6nk5nwy7_a2150b91-7f5b-423b-9bde-f90486e8f226.png"
                 alt="Shashank Saurav portrait"
                 loading="eager"
-                className="absolute inset-0 w-full h-full object-cover object-top"
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 200 }}
                 style={{ filter: "grayscale(1) contrast(1.05)" }}
+                data-testid="hero-portrait"
+                className="absolute -bottom-12 md:-bottom-16 left-1/2 -translate-x-1/2 h-[120%] w-auto max-w-none drop-shadow-[8px_8px_0_rgba(26,26,36,0.35)]"
               />
-            </motion.div>
-            {/* corner sticky */}
-            <div className="absolute -top-6 -left-6 w-12 h-12 hidden md:block z-10">
-              <StarBurst className="w-full h-full" />
             </div>
           </div>
         </motion.div>
