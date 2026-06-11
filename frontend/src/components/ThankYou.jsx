@@ -44,12 +44,12 @@ const ThankYou = () => {
         >
           <div className="relative">
             <div className="absolute -inset-4 border-[3px] border-ink rounded-[2.5rem] rotate-[3deg]" />
-            <div className="relative w-[260px] h-[360px] md:w-[340px] md:h-[460px] bg-white border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg">
+            <div className="relative w-[280px] h-[400px] md:w-[360px] md:h-[500px] flex items-end justify-center">
               <img
-                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/zwm7fycw_image.png"
+                src="/portraits/thanks-pointing.png"
                 alt="Shashank pointing down"
                 loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover object-top grayscale"
+                className="w-full h-full object-contain object-bottom drop-shadow-[6px_6px_0_rgba(26,26,36,0.25)]"
                 style={{ filter: "grayscale(1) contrast(1.05)" }}
               />
             </div>

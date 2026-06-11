@@ -29,22 +29,24 @@ const About = () => {
           className="relative"
           data-testid="about-image-card"
         >
-          <div className="relative w-full max-w-[420px] mx-auto">
+          <div className="relative w-full max-w-[440px] mx-auto">
             <div className="absolute -inset-3 border-[3px] border-ink rounded-[2rem] rotate-[-2deg]" />
-            <div className="relative bg-white border-2 border-ink rounded-[1.8rem] overflow-hidden shadow-hardLg aspect-[4/5]">
+            <div className="relative bg-powder border-2 border-ink rounded-[1.8rem] overflow-hidden shadow-hardLg aspect-[4/5] flex items-end justify-center">
+              {/* Soft paper-texture inside the frame */}
+              <div className="absolute inset-0 paper-grain" aria-hidden />
               <img
-                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/nspkyfti_image.png"
+                src="/portraits/engineer.png"
                 alt="Shashank Saurav as an engineer with hard hat"
                 loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover object-center grayscale"
+                className="relative z-10 w-full h-full object-contain object-bottom"
                 style={{ filter: "grayscale(1) contrast(1.05)" }}
               />
             </div>
             {/* Doodles around */}
-            <div className="absolute -top-8 -right-6 w-20 h-14 rotate-[15deg]">
+            <div className="absolute -top-8 -right-6 w-20 h-14 rotate-[15deg] z-20">
               <HandArrow className="w-full h-full" color="#1A1A24" />
             </div>
-            <div className="absolute -bottom-6 -left-8 w-24 h-10 rotate-[-10deg]">
+            <div className="absolute -bottom-6 -left-8 w-24 h-10 rotate-[-10deg] z-20">
               <Squiggle className="w-full h-full" color="#F6D34B" />
             </div>
           </div>

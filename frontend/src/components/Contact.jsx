@@ -101,19 +101,19 @@ const Contact = () => {
             whileInView={{ opacity: 1, scale: 1, rotate: -2 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative w-[180px] md:w-[220px] flex-shrink-0 hidden sm:block"
+            className="relative w-[200px] md:w-[260px] flex-shrink-0 hidden sm:block"
             data-testid="contact-coffee-portrait"
           >
-            <div className="absolute -inset-2 border-[3px] border-sun rounded-[1.6rem] rotate-3" />
-            <div className="relative bg-white border-2 border-sun rounded-[1.4rem] overflow-hidden shadow-hardYellow aspect-square">
+            <div className="relative aspect-square flex items-end justify-center">
               <img
-                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/85rfuhj4_image.png"
+                src="/portraits/coffee.png"
                 alt="Shashank offering coffee"
                 loading="lazy"
-                className="w-full h-full object-cover object-top grayscale"
+                className="w-full h-full object-contain object-bottom"
+                style={{ filter: "grayscale(1) contrast(1.05) drop-shadow(4px 4px 0 rgba(246,211,75,0.4))" }}
               />
             </div>
-            <p className="absolute -bottom-6 left-1/2 -translate-x-1/2 font-hand text-2xl text-sun whitespace-nowrap rotate-[-4deg]">coffee&apos;s on me ☕</p>
+            <p className="absolute -bottom-4 left-1/2 -translate-x-1/2 font-hand text-2xl text-sun whitespace-nowrap rotate-[-4deg]">coffee&apos;s on me ☕</p>
           </motion.div>
         </div>
 

@@ -109,19 +109,19 @@ const Hero = () => {
             <motion.div
               whileHover={{ rotate: -1, y: -4 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="relative w-[260px] h-[360px] md:w-[340px] md:h-[460px] bg-powder border-2 border-ink rounded-[2rem] overflow-hidden shadow-hardLg"
+              className="relative w-[280px] h-[400px] md:w-[360px] md:h-[500px] flex items-end justify-center overflow-visible"
               data-testid="hero-portrait"
             >
               <img
-                src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/rnsqo3p1_image.png"
+                src="/portraits/hero-suit.png"
                 alt="Shashank Saurav portrait"
                 loading="eager"
-                className="absolute inset-0 w-full h-full object-cover object-top grayscale"
+                className="w-full h-full object-contain object-bottom drop-shadow-[6px_6px_0_rgba(26,26,36,0.35)]"
                 style={{ filter: "grayscale(1) contrast(1.05)" }}
               />
             </motion.div>
             {/* corner sticky */}
-            <div className="absolute -top-6 -left-6 w-12 h-12 hidden md:block">
+            <div className="absolute -top-6 -left-6 w-12 h-12 hidden md:block z-10">
               <StarBurst className="w-full h-full" />
             </div>
           </div>
