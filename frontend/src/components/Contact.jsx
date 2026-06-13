@@ -66,22 +66,34 @@ const Contact = () => {
     }
     setSending(true);
     try {
-           toast.success("Message sent. I'll get back to you soon.");
-	    const subject = encodeURIComponent(`Website Inquiry from ${form.name}`);
-const body = encodeURIComponent(
-  `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
-);
+    const response = await fetch("https://api.web3forms.com/submit", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
+  body: JSON.stringify({
+    access_key: "91593c0d-10ab-46d7-8958-79b50108179c",
+    subject: `Portfolio Inquiry from ${form.name}`,
+    name: form.name,
+    email: form.email,
+    message: form.message,
+  }),
+});
 
-window.location.href =
-  `mailto:shashanksaurav2408@gmail.com?subject=${subject}&body=${body}`;
+const result = await response.json();
 
-toast.success("Your email app has been opened.");
-      setForm({ name: "", email: "", message: "" });
-    } catch (err) {
-      toast.error("Could not send. Try again or email me directly.");
-    } finally {
-      setSending(false);
-    }
+if (result.success) {
+  toast.success("Message sent successfully!");
+  setForm({ name: "", email: "", message: "" });
+} else {
+  throw new Error("Submission failed");
+}
+} catch (err) {
+  toast.error("Could not send. Try again or email me directly.");
+} finally {
+  setSending(false);
+}
   };
 
   return (
