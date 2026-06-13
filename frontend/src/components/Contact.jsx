@@ -239,4 +239,4 @@ toast.success("Your email app has been opened.");
   );
 };
 
-export default Contact;:69
+export default Contact;
