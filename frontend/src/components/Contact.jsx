@@ -66,8 +66,16 @@ const Contact = () => {
     }
     setSending(true);
     try {
-      await axios.post(`${API}/contact`, form);
-      toast.success("Message sent. I'll get back to you soon.");
+           toast.success("Message sent. I'll get back to you soon.");
+	    const subject = encodeURIComponent(`Website Inquiry from ${form.name}`);
+const body = encodeURIComponent(
+  `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
+);
+
+window.location.href =
+  `mailto:shashanksaurav2408@gmail.com?subject=${subject}&body=${body}`;
+
+toast.success("Your email app has been opened.");
       setForm({ name: "", email: "", message: "" });
     } catch (err) {
       toast.error("Could not send. Try again or email me directly.");
@@ -231,4 +239,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact;:69
