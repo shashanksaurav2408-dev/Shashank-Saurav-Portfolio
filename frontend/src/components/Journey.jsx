@@ -128,7 +128,7 @@ const Journey = () => {
           data-testid="journey-standing-hero"
         >
           <img
-            src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/jz6xuewc_07ca34dc-8a36-4031-9950-9407697e330a.png"
+            src="/portraits/Super-Stand.png"
             alt=""
             className="w-full h-auto drop-shadow-[8px_8px_0_rgba(26,26,36,0.4)]"
           />
