@@ -45,7 +45,7 @@ const ThankYou = () => {
             <div className="relative w-[320px] md:w-[460px] aspect-[3/4]">
               <div className="absolute inset-0 border-[3px] border-sun rounded-[2.5rem] rotate-[3deg] bg-powder/30 overflow-hidden">
                 <img
-                  src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/rxsmi2tf_26beca01-1e69-4234-93c0-4dacc7b61b43.png"
+                  src="/portraits/thanks-pointing.png"
                   alt="Shashank pointing down"
                   loading="lazy"
                   style={{ filter: "grayscale(1) contrast(1.05)" }}
