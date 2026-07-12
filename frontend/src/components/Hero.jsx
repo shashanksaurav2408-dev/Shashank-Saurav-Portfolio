@@ -100,7 +100,7 @@ const Hero = () => {
             <div className="relative w-[320px] md:w-[460px] aspect-[3/4]">
               <div className="absolute inset-0 border-[3px] border-sun rounded-[2.5rem] rotate-[2deg] bg-powder/30 overflow-hidden">
                 <motion.img
-                 src="/portraits/hero-suit-v2.png"
+                 src="/portraits/hero-suit.png"
                   alt="Shashank Saurav portrait"
                   loading="eager"
                   whileHover={{ scale: 1.02 }}
