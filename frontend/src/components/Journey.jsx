@@ -41,7 +41,7 @@ const Journey = () => {
         data-testid="journey-flying-hero"
       >
         <img
-          src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/gf351eoh_92a8bd98-040d-4053-9ac0-3ba9b5398e98.png"
+          src="/portraits/Super-Fly.png"
           alt=""
           className="w-full h-auto drop-shadow-[10px_10px_0_rgba(26,26,36,0.4)]"
         />
