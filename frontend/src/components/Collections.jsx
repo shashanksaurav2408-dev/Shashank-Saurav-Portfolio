@@ -10,8 +10,7 @@ const projects = [
       "The new way for Indians to socialise. A differentiated positioning strategy for a new functional beverage brand.",
     tag: "Brand Positioning",
     href: "https://canva.link/t1eob216gi5i5n8",
-    image: "https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/7sbadfir_image.png",
-  },
+    image: "/projects/Damm.png",  },
   {
     id: "sound-of-home",
     title: "THE SOUND OF HOME",
@@ -19,7 +18,7 @@ const projects = [
       "Understanding how a utilitarian kitchen appliance became a symbol of care, prosperity and belonging.",
     tag: "Cultural Research",
     href: "https://canva.link/ydj3yqaj4vjcxyd",
-    image: "https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/6wjnwzjm_image.png",
+    image: "/projects/SOH.png",
   },
   {
     id: "djanae",
@@ -28,7 +27,7 @@ const projects = [
       "A consumer-centric strategic framework and positioning system for a luxury fragrance brand entering India.",
     tag: "Luxury Strategy",
     href: "https://canva.link/jyi5fg4h576wiqo",
-    image: "https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/9m2rjn5z_image.png",
+    image: "/projects/DJANAE.png",
   },
 ];
 
