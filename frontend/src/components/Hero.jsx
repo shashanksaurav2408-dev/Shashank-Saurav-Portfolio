@@ -100,7 +100,7 @@ const Hero = () => {
             <div className="relative w-[320px] md:w-[460px] aspect-[3/4]">
               <div className="absolute inset-0 border-[3px] border-sun rounded-[2.5rem] rotate-[2deg] bg-powder/30 overflow-hidden">
                 <motion.img
-                  src="https://customer-assets.emergentagent.com/job_unobvious-truths/artifacts/6nk5nwy7_a2150b91-7f5b-423b-9bde-f90486e8f226.png"
+                 src="/portraits/hero-suit-v2.png"
                   alt="Shashank Saurav portrait"
                   loading="eager"
                   whileHover={{ scale: 1.02 }}
@@ -119,3 +119,4 @@ const Hero = () => {
 };
 
 export default Hero;
+    
