@@ -9,7 +9,7 @@ module.exports = {
         extend: {
             colors: {
                 // Brand palette
-                steel: "#6B88B3",
+                steel: "#8FA6CB",
                 powder: "#DDE6F5",
                 sun: "#F6D34B",
                 ink: "#1A1A24",
